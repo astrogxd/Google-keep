@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="shortcut icon"
+      href="./images/icons8-google-keep-48.png"
+      type="image/x-icon"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
@@ -72,7 +77,7 @@
 
     <main>
       <div class="sidebar">
-        <div class="sidebar-item">
+        <div class="sidebar-item active-item">
           <span class="material-symbols-outlined hover active">lightbulb</span>
           <span class="sidebar-text">Notes</span>
         </div>
@@ -115,7 +120,7 @@
       </div>
 
       <div class="form-container active-form">
-        <form>
+        <form class="form" id="form">
           <input
             id="note-title"
             type="text"
@@ -188,10 +193,16 @@
 
       <div class="modal">
         <div class="modal-content">
-          <div class="form-container active-form">
-            <form>
-              <input type="text" class="note-title" placeholder="Title" />
+          <div class="form-container">
+            <form class="form" id="modal-form">
               <input
+                type="text"
+                id="modal-title"
+                class="note-title"
+                placeholder="Title"
+              />
+              <input
+                id="modal-text"
                 class="note-text"
                 type="text"
                 placeholder="Take a note..."
@@ -247,7 +258,7 @@
                     <span class="tooltip-text">redo</span>
                   </div>
                 </div>
-                <button class="close-btn">Close</button>
+                <button class="close-btn" id="modal-btn">Close</button>
               </div>
             </form>
           </div>
@@ -264,3 +275,5 @@
     <script src="app.js"></script>
   </body>
 </html>
+
+   
