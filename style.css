@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+#app {
+  display: "none";
+}
 
 /* hovereffects*/
 .material-symbols-outlined {
@@ -95,6 +98,14 @@ input:focus {
 }
 .profile-actions-area {
   display: flex;
+}
+.profile-actions-area .tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-user {
+  cursor: pointer;
 }
 
 /*Main section styles*/
@@ -316,4 +327,3 @@ input:focus {
 .open-modal {
   visibility: visible;
 }
-
